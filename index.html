@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ALGO, ADA, BAT, BNB, BTC, BTT, CHZ, DOGE, ICP, MANA, RACA, SAND, SHIB, WBX, XLM, XRP">
+  <meta name="keywords" content="ALGO, ADA, BAT, BNB, BTC, BTT, CHZ, DOGE, ICP, MANA, RACA, SAND, SHIB, WBX, XLM, XRP">
+  <link rel="shortcut icon" href="img/assets/img/icon/bbd.ico" type="image/x-icon">
+  <title>BitBlockDig</title>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Marcus">
+  <meta http-equiv="refresh" content="90; https://github.com/mlsfront/bbd/index.html">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    body {
+        width: 100%;
+        margin: auto;
+        padding: 14px;
+    }
+    #coin ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap:7px;
+        margin: 14px 0;
+    }
+
+    #coin ul li {
+        background-color: #c9deff;
+        border-radius: 7px;
+        width: 78px;
+        height: auto;
+        text-align: center;
+        padding: 4px 7px;
+    }
+
+    #coin ul li a {
+        color: #232526;
+        font-weight: bold;
+    }
+
+    .textH1 {
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    .scripts {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+    }
+
+    /* nav */
+    #nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap:7px;
+        margin: 14px 0;
+    }
+
+    #nav ul li {
+        background-color: #c9deff;
+        border-radius: 7px;
+        text-align: center;
+        width: auto;
+        padding: 3px 7px;
+    }
+    /* fim nav */
+    
+    /*btnTopo*/
+    .btnTopo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        background-color: #000;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .btnTopo::after {
+        /* content: "â†‘"; */
+        content: "▲";
+        font-size: 14px;
+        font-weight: bold;
+        color: aliceblue;
+        transition: margin-top 250ms;
+    }
+
+    .btnTopo:hover::after {
+        margin-top:-8px;
+    }
+    /*fim btnTopo*/    
+
+    @media (max-width: 633px) {
+        .scripts {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 708px) {        
+        #coin ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:7px;
+            margin: 14px 0;
+        }
+    }
+  </style>
+</head>
+
+<body>  
+  <div>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,2010,74,52,5994,1839,4066,5450,512" currency="BRL" theme="light" transparent="true" show-symbol-logo="true"></div>
+  </div>
+  
+  <div id="description">
+    <div id="coin">
+        <ul>
+            <li><a href="#algo" title="Algo">ALGO</a></li>
+            <li><a href="#ada" title="Cosmos">ADA</a></li>
+            <li><a href="#bat" title="Basic Attention">BAT</a></li>
+            <li><a href="#bnb" title="Binance Coin">BNB</a></li>
+            <li><a href="#btc" title="Bitcoin">BTC</a></li>
+            <li><a href="#btt" title="Bittorrent">BTT</a></li>
+            <li><a href="#chz" title="Chiliz">CHZ</a></li>
+            <li><a href="#doge" title="Doge">DOGE</a></li>
+            <li><a href="#icp" title="Internet Computer">ICP</a></li>
+            <li><a href="#lowb" title="Loser Coin">LOWB</a></li>
+            <li><a href="#mana" title="Decentraland">MANA</a></li>
+            <li><a href="#mkr" title="Maker">MKR</a></li>
+            <li><a href="#raca" title="Raca">RACA</a></li>
+            <li><a href="#reau" title="Reau Finance">REAU</a></li>
+            <li><a href="#sand" title="The Sandbox">SAND</a></li>
+            <li><a href="#shiba" title="Shiba">SHIBA</a></li>
+            <li><a href="#wbx" title="WBX">WBX</a></li>
+            <li><a href="#xlm" title="XLM">XLM</a></li>
+            <li><a href="#xrp" title="XRP-Ledger">XRP</a></li>
+            <li><a href="#usdt" title="Tether">USDT</a></li>
+        </ul>
+    </div>
+
+    <div class="textH1">
+      <h1 id="mls">Valores</h1>
+    </div>
+
+    <div class="scripts"> 
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="4030" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="ada"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="2010" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="bat"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1697" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="bnb"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1839" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="btc"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+
+      <p id="btt"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="3718" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="chz"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="4066" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="doge"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="74" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="icp"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="8916" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="lowb"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="9673" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="mana"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1966" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="raca"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="11346" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="reau"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="9413" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="sand"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="6210" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="shiba"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="5994" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="wbx"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="5450" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="xlm"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="512" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+
+      <p id="xrp"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="52" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+      
+      <p id="usdt"></p>
+      <div id="widget-cmc">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="825" data-base="BRL" data-secondary="USD" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-statsticker="false" data-stats="BRL"></div>
+      </div>
+    </div>
+  </div>  
+<nav id="nav">         
+    <ul>     
+        <li><a href="bbd.html">Home</a></li>     
+        <li><a href="https://dolarhoje.com/" target="_blank">Dolar Hoje</a></li>
+        <li class="top"><a href="#">Top</a></li>
+    </ul> 
+</nav>
+
+<footer>
+    <a href="#" class="btnTopo"></a>
+</footer>
+</body>
+</html>
