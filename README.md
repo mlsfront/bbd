@@ -1,0 +1,2 @@
+# bbd
+Valores de criptomoedas
